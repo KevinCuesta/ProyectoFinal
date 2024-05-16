@@ -2,19 +2,20 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Blank</ion-title>
+        <ion-title>Turnero</ion-title>
       </ion-toolbar>
     </ion-header>
 
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Carrito de Compra</ion-title>
+          <ion-title size="large">Turnero</ion-title>
         </ion-toolbar>
       </ion-header>
 
       <div id="container">
-        <strong>Bienvenido al carrito de compra.</strong>
+        <img src="../components/img/TurnoBlanco.png" alt="Logo del Turnero" style="margin-bottom: 20px;">
+        <h1>Bienvenido al Turnero</h1>
         <p>Por favor, inicia sesión para continuar.</p>
         <a href="/login">Iniciar sesión</a>
       </div>
@@ -29,29 +30,24 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue
 <style scoped>
 #container {
   text-align: center;
+  padding: 20px;
   
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+#container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 #container p {
   font-size: 16px;
-  line-height: 22px;
-  
   color: #8c8c8c;
-  
-  margin: 0;
+  margin-bottom: 20px;
 }
 
-#container a {
-  text-decoration: none;
+#container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 </style>
