@@ -1,0 +1,7 @@
+{
+  "name": "proyecto-turno",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
