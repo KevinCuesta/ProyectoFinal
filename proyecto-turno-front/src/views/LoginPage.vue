@@ -15,7 +15,7 @@
       </div>
       <div class="login-button">
         <ButtonComponent id="login" value="Iniciar Sesión" expand="full" @click="login" />
-        <ButtonComponent id="forgotPassword" value="Olvidé mi contraseña" expand="full" />
+        <ButtonComponent id="forgotPassword" value="Olvidé mi contraseña" expand="full" @click="ForgotPasswordPage" />
         <ButtonComponent id="CreateAccount" value="Crear una cuenta" expand="full" @click="CreateAccount" />
       </div>
     </div>
@@ -41,9 +41,13 @@ const login = () => {
     console.log('Credenciales inválidas');
   }
 };
+const ForgotPasswordPage = () => {
+  window.location.href = "/forgotpassword";
+};
 const CreateAccount = () => {
   window.location.href = "/createaccount";
 };
+
 </script>
 
 <style scoped src="../theme/login.css"></style>

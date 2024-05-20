@@ -4,6 +4,7 @@ import HomePage from '../views/HomePage.vue';
 import LoginPage from '../views/LoginPage.vue';
 import DasboardPage from '../views/DasboardPage.vue';
 import CreateAccountPage from '../views/CreateAccountPage.vue';
+import ForgotPasswordPage from '../views/ForgotPasswordPage.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,6 +31,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Createaccount',
     component: CreateAccountPage
   },
+  {
+    path: '/forgotpassword',
+    name: 'Forgotpassword',
+    component: ForgotPasswordPage
+  }
 ]
 
 const router = createRouter({
