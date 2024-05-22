@@ -1,13 +1,13 @@
-package com.Final.Proyecto_Final;
+package com.Turnero.Turnero_App;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProyectoFinalApplication {
+public class TurneroAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProyectoFinalApplication.class, args);
+		SpringApplication.run(TurneroAppApplication.class, args);
 	}
 
 }

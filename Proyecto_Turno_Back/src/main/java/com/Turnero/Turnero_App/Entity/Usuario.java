@@ -1,26 +1,31 @@
-package com.Final.Proyecto_Final.Entity;
+package com.Turnero.Turnero_App.Entity;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import jakarta.persistence.*;
 
-@Document(collection = "usuario")
+@Entity
+@Table(name = "usuario")
 public class Usuario {
 
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idUsuario;
 
+    @Column(name = "idcedulausuario", length = 10, nullable = false)
     private String idCedulaUsuario;
+    @Column(name = "nombre", length = 150, nullable = false)
     private String nombre;
+    @Column(name = "correo", length = 50, nullable = false)
     private String correo;
+    @Column(name = "contraseña", length = 50, nullable = false)
     private String contraseña;
 
-    // Getters y Setters
-    public String getId() {
-        return id;
+
+    public long getId() {
+        return idUsuario;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setId(long id) {
+        this.idUsuario = id;
     }
 
     public String getIdCedulaUsuario() {
@@ -55,4 +60,3 @@ public class Usuario {
         this.contraseña = contraseña;
     }
 }
-

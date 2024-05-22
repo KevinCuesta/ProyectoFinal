@@ -1,10 +1,10 @@
-package com.Final.Proyecto_Final;
+package com.Turnero.Turnero_App;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProyectoFinalApplicationTests {
+class TurneroAppApplicationTests {
 
 	@Test
 	void contextLoads() {
